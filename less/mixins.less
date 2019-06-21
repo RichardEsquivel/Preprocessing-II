@@ -1,1 +1,26 @@
 // Mixins in here
+
+.button-mixin(@flex, @justify,@border-radius,@align,@width,@height,
+    @background,@color,@border,@cursor,@font-size) {
+	display: @flex;
+	justify-content: @justify;
+	border-radius: @border-radius;
+	align-items: @align;
+	width: @width;
+	height: @height;
+	background: @background;
+	color: @color;
+	border: @border;
+	cursor: @cursor;
+	font-size: @font-size;
+
+	&:hover {
+		background: lighten(@background, 30%);
+		color: darken(@color, 99%);
+	}
+}
+
+.btn {
+	.button-mixin(flex,center,16px,center,80%,20%,#1fc8e3,white, 1px solid black,
+        pointer, 1.75rem);
+}
