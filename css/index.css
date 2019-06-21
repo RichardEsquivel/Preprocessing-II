@@ -1,3 +1,20 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  align-items: center;
+  width: 80%;
+  height: 20%;
+  background: #1fc8e3;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 1.75rem;
+}
+.btn:hover {
+  background: #a7e9f4;
+  color: #030303;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -167,6 +184,7 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 1.5%;
 }
 .main-navigation {
   width: 100%;
